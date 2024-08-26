@@ -1,5 +1,6 @@
 import pygame 
 from pygame.sprite import Sprite
+from pathlib import Path
 
 class Alien(Sprite):
 	""" to have the alien on the screen """
@@ -10,7 +11,7 @@ class Alien(Sprite):
 		self.settings = ai_game.settings
 
 		## Load the image
-		self.image = pygame.image.load('C:\\Users\\Yugandhari Bodapati\\Desktop\\python_work\\game_development\\alien_ship.png')
+		self.image = pygame.image.load(Path() / 'alien_ship.png')
 		self.rect = self.image.get_rect()
 
 		self.rect.x = self.rect.width
