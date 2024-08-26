@@ -1,4 +1,5 @@
 import pygame
+from pathlib import Path
 
 class Ship:
 	"""to add the rocket image """
@@ -10,10 +11,10 @@ class Ship:
 		self.screen_rect = ai_game.screen.get_rect()
 
 		#Load the ship image and get its rect 
-		self.image = pygame.image.load('C:\\Users\\Yugandhari Bodapati\\Desktop\\python_work\\game_development\\rocket.png')
+		self.image = pygame.image.load(Path() / 'rocket.png')
 		self.rect = self.image.get_rect()
 
-		self.image2 = pygame.image.load('C:\\Users\\Yugandhari Bodapati\\Desktop\\python_work\\game_development\\space.jpg')
+		self.image2 = pygame.image.load(Path() / 'space.jpg')
 		self.rect2 = self.image2.get_rect()
 		
 		# Start each new ship at the bottem of the screen
